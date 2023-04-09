@@ -1,12 +1,22 @@
 import { useState } from "react";
 import { generateStable, generateCustom, generateDallE } from "@/components/interface";
+import Head from "next/head";
 
 export default function Generate() {
   const [picture, getPicture] = useState("black-swirl.gif");
-  const [model, getModel] = useState('');
+  const [model, getModel] = useState('No model selected');
+
+  async function reset() {
+    getModel('No model selected');
+  }
+
+  async function custom() {
+    let aimodel = document.getElementById("aimodel").value.toString();
+    getModel(aimodel);
+  }
 
   async function generateImg() {
-    let init = 'Generating Image, Please Wait...'
+    let init = 'Generating Image, eta up-to 50 secs, Please Wait...'
     document.getElementById("status").innerHTML = init
     let prompt = document.getElementById("prompt").value.toString()
     let aimodel = document.getElementById("aimodel").value.toString()
@@ -47,6 +57,9 @@ export default function Generate() {
 
   return (
     <div>
+      <Head>
+        <title>Net2Dev AI Image Generator</title>
+      </Head>  
       <div className="container" style={{ fontFamily: "SF Pro Display" }}>
         <div className="row g-6">
           <div className="col-lg-3">
@@ -57,7 +70,7 @@ export default function Generate() {
               height="65"
             />
             <h6>Subscribe to my Youtube!</h6>
-            <a href="http://youtube.net2dev.io">
+            <a href="http://youtube.net2dev.io" target="_blank">
             <img
               className="mb-3 d-flex"
               src="ytlogo.png"
@@ -66,10 +79,28 @@ export default function Generate() {
             />
             </a>
             <h6>Follow me on Github!</h6>
-            <a href="https://github.com/net2devcrypto">
+            <a href="https://github.com/net2devcrypto" target="_blank">
             <img
               className="mb-3 d-flex"
               src="github.png"
+              width="170"
+              height="40"
+            />
+            </a>
+            <h6>Cool AI Generator Models!</h6>
+            <a href="https://stablediffusionapi.com/models" target="_blank">
+            <img
+              className="mb-3 d-flex"
+              src="ai-models.png"
+              width="170"
+              height="50"
+            />
+            </a>
+            <h6>Best AI Image Prompts!</h6>
+            <a href="https://prompthero.com/ai-prompts" target="_blank">
+            <img
+              className="mb-3 d-flex"
+              src="prompts.png"
               width="170"
               height="50"
             />
@@ -143,6 +174,7 @@ export default function Generate() {
             <input
                 className="form-control"
                 id="aimodel"
+                onChange={custom}
                 placeholder="Or input custom AI Model (optional)"
                 style={{
                   backgroundColor: "#d3d3d310",
@@ -150,6 +182,15 @@ export default function Generate() {
                   color: "white",
                 }}
               />
+              </div>
+              <div className="col-sm-5 mt-4">
+              <h5 style={{
+                  color: "white",
+                }}>Model Selected: {model}</h5>
+              </div>
+              <div className="col-sm-2 mt-3">
+              <button className="w-100 btn btn-primary btn-md"
+              onClick={reset}>Reset Model</button>
               </div>
               <div className="col-sm-12 mt-2">
             <button
@@ -163,7 +204,7 @@ export default function Generate() {
               Generate Image
             </button>
             </div>
-            <div className="mt-2" id="status" style={{fontSize:'25px'}}/>
+            <div className="mt-2" id="status" style={{fontSize:'23px', color:'white'}}/>
               </div>
             <div className="row mt-2 d-flex">
               <img

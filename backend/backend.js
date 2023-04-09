@@ -54,6 +54,7 @@ async function generateCustom(prompt, aimodel) {
     options
   );
   const result = await response.json();
+  console.log('Image Generated!')
   return result.output[0];
 }
 
@@ -65,14 +66,14 @@ async function generateCustom(prompt, aimodel) {
         prompt: prompt,
         negative_prompt:
           "((out of frame)), ((extra fingers)), mutated hands, ((poorly drawn hands)), ((poorly drawn face)), (((mutation))), (((deformed))), (((tiling))), ((naked)), ((tile)), ((fleshpile)), ((ugly)), (((abstract))), blurry, ((bad anatomy)), ((bad proportions)), ((extra limbs)), cloned face, (((skinny))), glitchy, ((extra breasts)), ((double torso)), ((extra arms)), ((extra hands)), ((mangled fingers)), ((missing breasts)), (missing lips), ((ugly face)), ((fat)), ((extra legs)), anime",
-        width: "512",
-        height: "512",
+        width: "768",
+        height: "1024",
         samples: 1,
         num_inference_steps: "30",
         safety_checker: "no",
         enhance_prompt: "yes",
         seed: null,
-        guidance_scale: 7.5,
+        guidance_scale: 10,
         webhook: null,
         track_id: null,
       }),
@@ -87,26 +88,34 @@ async function generateCustom(prompt, aimodel) {
   );
   const result = await response.json();
   const etaraw = Number(((result.eta).toString()).split('.')[0]);
-  console.log(etaraw)
-  const etamilisec = etaraw * 1000;
+  const etamilisec = etaraw * 1500;
   console.log('Estimated duration ' + etaraw + " seconds")
   const imagepath = result.fetch_result;
   const data = result.output[0];
-  if (data == undefined) {
+  const array = [];
+  if (data != undefined) {
+    array.push(data);
+  }
+  else if (data == undefined) {
   await delay(etamilisec);
   const options = {
     method: "POST",
-    key : stablekey,
+    body: JSON.stringify({
+      key: stablekey,
+    }),
+    headers: {
+      "Content-Type": "application/json",
+    },
   };
   const response2 = await fetch(imagepath, options);
   const fetched = await response2.json();
-  console.log(fetched);
   const imageout = fetched.output[0];
-  return imageout;
+  array.push(imageout);
   }
-  else {
-    return data;
-  }
+  await delay(2000);
+  const image = array[0];
+  console.log('Image Generated!')
+  return image;
 }
 
 
@@ -116,6 +125,7 @@ async function generateCustom(prompt, aimodel) {
     n: 1,
     size: "512x512",
   });
+  console.log('Image Generated!')
   return data.data.data[0].url;
  }
 
