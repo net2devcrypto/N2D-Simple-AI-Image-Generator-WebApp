@@ -43,7 +43,7 @@ Create your Account in Stablediffusion: https://stablediffusionapi.com/
 
 Create API key in your account then copy it.
 
-In the app folder, go to "backend" folder and open "key.js", then update the key accordingly:
+In the app folder, go to "backend" folder and open "key.js" with notepad, then update the key accordingly:
 
 ```shell
 const stablekey = 'REPLACE_WITH_YOUR_STABLE_DIFFUSION_API_KEY';
@@ -57,7 +57,7 @@ Create your Account in OpenAI: https://platform.openai.com/
 
 Create API key in your account then copy it.
 
-In the app folder, go to "backend" folder and open "key.js", then update the key accordingly:
+In the app folder, go to "backend" folder and open "key.js" with notepad, then update the key accordingly:
 
 ```shell
 const openaikey = 'REPLACE_WITH_OPEN_AI_API_KEY';
