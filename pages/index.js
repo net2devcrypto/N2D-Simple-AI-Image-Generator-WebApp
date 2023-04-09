@@ -105,12 +105,14 @@ export default function Generate() {
               height="50"
             />
             </a>
+            <a href="disclaimer">
+            <h5>Terms of Use.</h5>
+            </a>
           </div>
           
           <div className="col-md-3 col-lg-9">
-            <h5 className="d-flex justify-content-start align-items-right mt-2 mb-2">
-              <span className="text-primary bold" style={{fontSize:'30px'}}>AI Image Generator v1</span>
-            </h5>
+            <img className="d-flex justify-content-start align-items-right mt-2 mb-2"
+            src="logo.png" width="300" height="50"/>
             <div className="col-sm-9">
               <textarea
                 className="form-control"
