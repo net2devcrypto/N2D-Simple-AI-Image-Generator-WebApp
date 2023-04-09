@@ -17,11 +17,6 @@ https://raw.githubusercontent.com/net2devcrypto/N2D-Simple-AI-Image-Generator-We
 
 ** IF YOU PROCEED, YOU AGREE TO THE TERMS AND CONDITIONS IN THE DISCLAIMER **
 
-** USE IT AT YOUR OWN RISK** 
-
-**I'M NOT RESPONSIBLE FOR ANY USE, ISSUES ETC.. **
-
-
 ## Step 2
 
 Download App: 
