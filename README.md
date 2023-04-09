@@ -1,6 +1,5 @@
 # N2D Simple AI Image Generator Web App
 
-##
 <h3>Subscribe to my Youtube! Net2Dev</h3>
 <a href="http://youtube.net2dev.io" target="_blank"><img src="https://github.com/net2devcrypto/misc/blob/main/ytlogo2.png" width="150" height="40"></a>
 
@@ -13,7 +12,7 @@
 
 ** PLEASE CLICK TO READ THE DISCLAIMER BEFORE CONTINUING: **
 
-https://raw.githubusercontent.com/net2devcrypto/N2D-Simple-AI-Image-Generator-WebApp/main/disclaimer.txt?token=GHSAT0AAAAAAB7SCBPOKGM4YM7BZ3NCDLXCZBTIIWA
+https://github.com/net2devcrypto/N2D-Simple-AI-Image-Generator-WebApp/blob/main/disclaimer.txt
 
 ** IF YOU PROCEED TO STEP 2, YOU AGREE TO THE TERMS AND CONDITIONS IN THE DISCLAIMER **
 
