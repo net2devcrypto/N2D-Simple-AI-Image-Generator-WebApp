@@ -23,7 +23,7 @@ https://raw.githubusercontent.com/net2devcrypto/N2D-Simple-AI-Image-Generator-We
 
 ## Step 1
 
-Download Files: 
+Download App: 
 
 https://github.com/net2devcrypto/N2D-Simple-AI-Image-Generator-WebApp/archive/refs/heads/main.zip
 
