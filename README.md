@@ -1,38 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# N2D Simple AI Image Generator Web App
 
-## Getting Started
+##
+<h3>Subscribe to my Youtube! Net2Dev</h3>
+<a href="http://youtube.net2dev.io" target="_blank"><img src="https://github.com/net2devcrypto/misc/blob/main/ytlogo2.png" width="150" height="40"></a>
 
-First, run the development server:
+<img src="https://raw.githubusercontent.com/net2devcrypto/misc/main/Midjourney_Emblem.png" width="350" height="350">
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+
+** THE FILES ATTACHED TO THIS REPO ARE FOR EDUCATIONAL PURPOSES ONLY **
+
+** PLEASE CLICK TO READ THE DISCLAIMER BEFORE CONTINUING: **
+
+https://raw.githubusercontent.com/net2devcrypto/N2D-Simple-AI-Image-Generator-WebApp/main/disclaimer.txt?token=GHSAT0AAAAAAB7SCBPOKGM4YM7BZ3NCDLXCZBTIIWA
+
+** IF YOU PROCEED, YOU AGREE TO THE TERMS AND CONDITIONS IN THE DISCLAIMER **
+
+** USE IT AT YOUR OWN RISK** 
+
+**I'M NOT RESPONSIBLE FOR ANY USE, ISSUES ETC.. **
+
+
+
+## Step 1
+
+Download Files: 
+
+https://github.com/net2devcrypto/N2D-Simple-AI-Image-Generator-WebApp/archive/refs/heads/main.zip
+
+## Step 2
+
+Extract the zip file, navigate to the app folder and install NodeJS :
+
+```shell
+node-v18.15.0-x64.msi
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+During the wizard, install without any additional tools since its not required.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Step 3
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Create your Account in Stablediffusion: https://stablediffusionapi.com/
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Create API key in your account then copy it.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+In the app folder, go to "backend" folder and open "key.js", then update the key accordingly:
 
-## Learn More
+```shell
+const stablekey = 'REPLACE_WITH_YOUR_STABLE_DIFFUSION_API_KEY';
+```
 
-To learn more about Next.js, take a look at the following resources:
+Save file.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Step 4
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Create your Account in OpenAI: https://platform.openai.com/
 
-## Deploy on Vercel
+Create API key in your account then copy it.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+In the app folder, go to "backend" folder and open "key.js", then update the key accordingly:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```shell
+const openaikey = 'REPLACE_WITH_OPEN_AI_API_KEY';
+```
+
+Save file.
+
+## Step 5
+
+Execute "install.bat" located in the app folder.
+
+## Step 6
+
+Execute "startapp.bat" located in the app folder.
+
+Your application should be active, navigate to http://localhost:3000 in your browser :)
+
+
+Follow me in Youtube @Net2Dev!!
