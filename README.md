@@ -1,8 +1,5 @@
 # N2D Simple AI Image Generator Web App
 
-<h3>Subscribe to my Youtube! Net2Dev</h3>
-<a href="http://youtube.net2dev.io" target="_blank"><img src="https://github.com/net2devcrypto/misc/blob/main/ytlogo2.png" width="150" height="40"></a>
-
 <img src="https://raw.githubusercontent.com/net2devcrypto/misc/main/app.png" width="650" height="650">
 
 
@@ -76,4 +73,5 @@ Execute "startapp.bat" located in the app folder.
 Your application should be active, navigate to http://localhost:3000 in your browser :)
 
 
-Follow me in Youtube @Net2Dev!!
+<h3>Subscribe to my Youtube! Net2Dev</h3>
+<a href="http://youtube.net2dev.io" target="_blank"><img src="https://github.com/net2devcrypto/misc/blob/main/ytlogo2.png" width="150" height="40"></a>
