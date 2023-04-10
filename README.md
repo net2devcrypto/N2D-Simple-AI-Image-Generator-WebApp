@@ -6,6 +6,11 @@
 <img src="https://raw.githubusercontent.com/net2devcrypto/misc/main/app.png" width="650" height="650">
 
 
+Click for tutorial video:
+
+<a href="https://youtu.be/YSsW5NMkCVo" target="_blank"><img src="https://github.com/net2devcrypto/misc/blob/main/ytlogo2.png" width="150" height="40"></a> 
+
+
 ** THE FILES ATTACHED TO THIS REPO ARE FOR EDUCATIONAL PURPOSES ONLY **
 
 ## Step 1
