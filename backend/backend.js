@@ -87,16 +87,16 @@ async function generateCustom(prompt, aimodel) {
     options
   );
   const result = await response.json();
-  const etaraw = Number(((result.eta).toString()).split('.')[0]);
-  const etamilisec = etaraw * 1500;
-  console.log('Estimated duration ' + etaraw + " seconds")
-  const imagepath = result.fetch_result;
   const data = result.output[0];
   const array = [];
   if (data != undefined) {
     array.push(data);
   }
   else if (data == undefined) {
+  const etaraw = Number(((result.eta).toString()).split('.')[0]);
+  const etamilisec = etaraw * 1500;
+  console.log('Estimated duration ' + etaraw + " seconds")
+  const imagepath = result.fetch_result;
   await delay(etamilisec);
   const options = {
     method: "POST",
